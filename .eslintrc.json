@@ -1,0 +1,22 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint", "css"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:css/recommended"
+  ],
+  "settings": {
+    "polyfills": [
+      "Promise",
+      "fetch",
+      "Object.entries",
+      "Object.values",
+      "Object.assign",
+      "Array.from"
+    ]
+  }
+}
